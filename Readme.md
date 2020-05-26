@@ -1,6 +1,6 @@
-       # Pull Request Tutorial
+                         # Pull Request Tutorial
 
-  ## What is a Pull Request?
+             ## What is a Pull Request?
 From Github's [Using Pull Requests Page](https://help.github.com/articles/using-pull-requests)
 > Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
 
@@ -8,7 +8,7 @@ Pull Requests are commonly used by teams and organizations collaborating using t
 
 Here's [an example pull request](https://github.com/jquery/jquery/pull/1051) from jQuery's github repo.
 
-  ## Creating a Pull Request
+             ## Creating a Pull Request
 
 There are 2 main work flows when dealing with pull requests:
 
