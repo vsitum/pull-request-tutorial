@@ -1,6 +1,6 @@
-# Pull Request Tutorial
+       # Pull Request Tutorial
 
-## What is a Pull Request?
+  ## What is a Pull Request?
 From Github's [Using Pull Requests Page](https://help.github.com/articles/using-pull-requests)
 > Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
 
@@ -8,7 +8,7 @@ Pull Requests are commonly used by teams and organizations collaborating using t
 
 Here's [an example pull request](https://github.com/jquery/jquery/pull/1051) from jQuery's github repo.
 
-## Creating a Pull Request
+  ## Creating a Pull Request
 
 There are 2 main work flows when dealing with pull requests:
 
@@ -17,7 +17,7 @@ There are 2 main work flows when dealing with pull requests:
 
 Here we are going to focus on 2.
 
-### Creating a Topical Branch
+   ### Creating a Topical Branch
 
 First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
 
@@ -34,7 +34,7 @@ git checkout -b pull-request-demo
 git push origin pull-request-demo
 ```
 
-### Creating a Pull Request
+   ### Creating a Pull Request
 
 To create a pull request, you must have changes committed to your new branch.
 
@@ -58,7 +58,7 @@ You should now see an open pull request.
 
 ![Open Pull Request](https://f.cloud.github.com/assets/676185/316899/6a62a7c8-984b-11e2-92ee-182ef257b574.png)
 
-### Using a Pull Request
+   ### Using a Pull Request
 
 You can write comments related to a pull request,
 
@@ -76,7 +76,7 @@ You can even leave a comment on particular lines in the code changed, simply by 
 
 ![Comment in line](https://f.cloud.github.com/assets/676185/316916/015be558-984d-11e2-9c4c-2ddc793fac3c.png)
 
-### Merging a Pull Request
+   ### Merging a Pull Request
 
 Once you and your collaborators are happy with the changes, you start to merge the changes back to master. There are a few ways to do this.
 
@@ -85,7 +85,7 @@ First, you can use github's "Merge pull request" button at the bottom of your pu
 ![Merge pull request button](https://f.cloud.github.com/assets/676185/316946/e8c42c4c-984e-11e2-8a09-5a977652028a.png)
 ![Confirm Merge](https://f.cloud.github.com/assets/676185/316947/ea15ebee-984e-11e2-8c08-e76a54c89755.png)
 
-#### Merging Locally
+   #### Merging Locally
 
 If the pull request cannot be merged online due to merge conflicts, or you wish to test things locally before sending the merge to the repo on Github, you can perform the merge locally instead.
 
@@ -95,7 +95,7 @@ You can find the instruction to do so by clicking the `(i)` icon on the merge ba
 
 However, there's an alternative that may be better for long standing branches.
 
-#### Squash, Rebase, and Cherry Pick
+   #### Squash, Rebase, and Cherry Pick
 
 In long standing branches, merging can often cause lots problems when updating if changes in a given branch conflict with changes recently merged into the master branch. If there are many commits to the same file, `git merge` may force you to fix the same merge conflicts over and over again, causing a real headache. While there are many ways to mitigate this issue, such as enabling [`git rerere`](https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html) to reuse recorded resolution of conflict merges, squashing a series of related changes into 1 commit and cherry-picking it into the master is a great solution, especially for topic branches and isolated features.
 
@@ -137,7 +137,7 @@ To merge the commit, we will use [`git cherry-pick`](https://www.kernel.org/pub/
 
 You are done! Github should detect the changes and update the pull request. You can then marked the pull request as merged and optionally delete the branch.
 
-### Closing a Pull Request
+   ### Closing a Pull Request
 
 You can simply click on the "Close" button on the pull request to close it. Optionally, you can delete the branch directly using the "Delete this branch" button.
 
